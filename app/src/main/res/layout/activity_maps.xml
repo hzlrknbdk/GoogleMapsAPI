@@ -29,6 +29,14 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+    <ZoomControls
+        android:id="@+id/zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
     <Button
         android:id="@+id/btn_Uydu"
         android:layout_width="wrap_content"
@@ -49,12 +57,6 @@
         android:layout_below="@+id/linear"
         tools:context="com.example.googlemapsapi.MapsActivity" />
 
-    <ZoomControls
-        android:id="@+id/zoom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true" />
+
 
 </RelativeLayout>
