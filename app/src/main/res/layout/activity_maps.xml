@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/lineer"
+        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -14,13 +14,13 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/et_location"
+            android:id="@+id/edt_location"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
         <Button
-            android:id="@+id/btn_Go"
+            android:id="@+id/btn_Git"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/button_color"
@@ -30,7 +30,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_Sat"
+        android:id="@+id/btn_Uydu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -46,7 +46,7 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/lineer"
+        android:layout_below="@+id/linear"
         tools:context="com.example.googlemapsapi.MapsActivity" />
 
     <ZoomControls
@@ -55,9 +55,6 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-
-
-        />
+        android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

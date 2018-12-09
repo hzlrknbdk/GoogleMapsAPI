@@ -40,7 +40,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         zoom.setOnZoomInClickListener { mMap!!.animateCamera(CameraUpdateFactory.zoomIn()) }
 
 
-        val btn_MapType = findViewById(R.id.btn_Sat) as Button
+        val btn_MapType = findViewById(R.id.btn_Uydu) as Button
         btn_MapType.setOnClickListener {
             if (mMap!!.mapType == GoogleMap.MAP_TYPE_NORMAL) {
                 mMap!!.mapType = GoogleMap.MAP_TYPE_SATELLITE
@@ -51,10 +51,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             }
         }
 
-        val btnGo = findViewById(R.id.btn_Go) as Button
+        val btnGo = findViewById(R.id.btn_Git) as Button
 
         btnGo.setOnClickListener {
-            val etLocation = findViewById(R.id.et_location) as EditText
+            val etLocation = findViewById(R.id.edt_location) as EditText
             val location = etLocation.text.toString()
             if (location != null && location != "") {
                 var adressList: List<Address>? = null
@@ -77,8 +77,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap = googleMap
 
         // Add a marker in Sydney and move the camera
-        val turkey = LatLng( 41.015137, 28.979530)
-        mMap.addMarker(MarkerOptions().position(turkey).title("Marker in Turkey"))
+        val turkey = LatLng(39.925533, 32.866287)
+        mMap.addMarker(MarkerOptions().position(turkey).title("TÜRKİYE"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(turkey))
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
